@@ -33,7 +33,7 @@ header h1 {
 }
 header .subtitle {
   width: 90%;
-  margin: 20px 0 70px 0;
+  margin: 20px 0 60px 0;
   text-align: center;
 }
 header .subtitle p {
@@ -49,7 +49,7 @@ header .subtitle p {
   align-items: center;
   width: 100%;
   height: 100%;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .stat-section .stat-1,
 .stat-section .stat-2,
@@ -83,8 +83,8 @@ header .subtitle p {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 50px;
-  margin-bottom: 10%;
+  margin-top: 30px;
+  margin-bottom: 5%;
 }
 .graphic-section .state-list {
   height: 100%;
@@ -193,6 +193,7 @@ header .subtitle p {
   font-size: 34px;
   font-weight: 700;
   text-align: center;
+  line-height: 1.2em;
 }
 .modal-text p {
   font-size: 24px;
@@ -217,39 +218,8 @@ header .subtitle p {
   cursor: pointer;
 }
 
-/* iPad size */
-@media only screen and (min-width: 800px) and (max-width: 1500px) {
-  header {
-    margin-top: 30px;
-  }
-  header h1 {
-    font-size: 40px;
-  }
-  header .subtitle {
-    margin: 20px 0 20px 0;
-  }
-  .graphic-section {
-    flex-direction: column;
-  }
-  .graphic-section .state-list {
-    justify-content: center;
-    width: 100%;
-    margin-top: 0px;
-  }
-  .graphic-section .map-image {
-    width: 100%;
-    margin-top: 25px;
-  }
-  .graphic-section svg {
-    width: 100%;
-    height: 100%;
-  }
-  .modal-content {
-    width: 40%;
-  }
-}
-/* Phone size */
-@media only screen and (max-width: 800px) {
+/* Desktop size */
+@media only screen and (min-width: 750px) and (max-width: 1500px) {
   header {
     margin-top: 30px;
   }
@@ -260,34 +230,143 @@ header .subtitle p {
     margin: 20px 0 20px 0;
   }
   .stat-section {
-    flex-direction: column;
-    margin-top: 50px;
-  }
-  .stat-section .stat-1,
-.stat-section .stat-2,
-.stat-section .stat-3 {
-    width: 80%;
-    height: 125px;
-    margin: 10px;
+    margin-top: 30px;
   }
   .graphic-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    margin-top: 0px;
   }
   .graphic-section .state-list {
     justify-content: center;
     width: 100%;
     margin-top: 0px;
+    margin-bottom: 5%;
   }
   .graphic-section .map-image {
-    width: 100%;
-    margin-top: 25px;
+    width: 90%;
+    margin-top: 20px;
   }
   .graphic-section svg {
     width: 100%;
     height: 100%;
   }
   .modal-content {
-    width: 55%;
-    height: 21%;
+    width: 40%;
+  }
+}
+/* iPad size */
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+  header {
+    margin-top: 30px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  header .subtitle {
+    margin: 20px 0 20px 0;
+  }
+  .stat-section {
+    margin-top: 30px;
+  }
+  .stat-section .stat-1,
+.stat-section .stat-2,
+.stat-section .stat-3 {
+    width: 45%;
+    height: 170px;
+    margin: 11px;
+    padding: 10px 0px 10px 0;
+  }
+  .graphic-section {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  .graphic-section .state-list {
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5%;
+  }
+  .graphic-section .map-image {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .graphic-section svg {
+    width: 100%;
+    height: 100%;
+  }
+  .modal-content {
+    width: 50%;
+  }
+  .modal-text h3 {
+    font-size: 30px;
+  }
+  .modal-text p {
+    font-size: 22px;
+  }
+}
+/* Phone size */
+@media only screen and (max-width: 550px) {
+  header {
+    margin-top: 0px;
+  }
+  header .title {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 34px;
+  }
+  header .subtitle {
+    margin: 10px 0 10px 0;
+    width: 100%;
+  }
+  .stat-section {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .stat-section .stat-1,
+.stat-section .stat-2,
+.stat-section .stat-3 {
+    width: 85%;
+    height: 110px;
+    margin: 8px;
+  }
+  .stat-section .stat-number {
+    font-size: 30px;
+  }
+  .stat-section .stat-description {
+    font-size: 16px;
+    padding: 0px 35px 0px 35px;
+  }
+  .graphic-section {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  .graphic-section .state-list {
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5%;
+  }
+  .graphic-section .state-list .stateName {
+    font-size: 13px;
+    margin: 5px;
+    padding: 8px;
+  }
+  .graphic-section .map-image {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .graphic-section svg {
+    width: 100%;
+    height: 100%;
+  }
+  .modal-content {
+    width: 70%;
+  }
+  .modal-text h3 {
+    font-size: 26px;
+  }
+  .modal-text p {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
