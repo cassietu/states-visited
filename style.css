@@ -84,7 +84,7 @@ header .subtitle p {
   justify-content: center;
   align-items: flex-start;
   margin-top: 30px;
-  margin-bottom: 5%;
+  margin-bottom: 75px;
 }
 .graphic-section .state-list {
   height: 100%;
@@ -178,8 +178,10 @@ header .subtitle p {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 25%;
-  height: 18%;
+  height: 16%;
   background-color: white;
   filter: drop-shadow(5px 5px 15px rgba(45, 45, 45, 0.5));
   border-radius: 10px;
@@ -203,12 +205,11 @@ header .subtitle p {
 }
 
 .close {
-  position: absolute;
-  align-self: flex-start;
+  align-self: flex-end;
   font-size: 28px;
+  line-height: 1em;
   font-weight: bold;
   color: rgb(222, 222, 222);
-  right: 6%;
 }
 
 .close:hover,
@@ -240,7 +241,6 @@ header .subtitle p {
     justify-content: center;
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 5%;
   }
   .graphic-section .map-image {
     width: 90%;
@@ -252,6 +252,7 @@ header .subtitle p {
   }
   .modal-content {
     width: 40%;
+    height: 17%;
   }
 }
 /* iPad size */
@@ -284,7 +285,6 @@ header .subtitle p {
     justify-content: center;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 5%;
   }
   .graphic-section .map-image {
     width: 90%;
@@ -296,11 +296,12 @@ header .subtitle p {
   }
   .modal-content {
     width: 50%;
+    height: 16%;
   }
-  .modal-text h3 {
+  .modal-content .modal-text h3 {
     font-size: 30px;
   }
-  .modal-text p {
+  .modal-content .modal-text p {
     font-size: 22px;
   }
 }
@@ -345,7 +346,6 @@ header .subtitle p {
     justify-content: flex-start;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 5%;
   }
   .graphic-section .state-list .stateName {
     font-size: 13px;
@@ -362,6 +362,7 @@ header .subtitle p {
   }
   .modal-content {
     width: 70%;
+    height: 16%;
   }
   .modal-text h3 {
     font-size: 26px;
