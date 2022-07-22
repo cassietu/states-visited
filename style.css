@@ -39,7 +39,7 @@ header .subtitle {
 header .subtitle p {
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 /* Stats Section */
@@ -181,7 +181,6 @@ header .subtitle p {
   justify-content: flex-start;
   flex-direction: column;
   width: 25%;
-  height: 16%;
   background-color: white;
   filter: drop-shadow(5px 5px 15px rgba(45, 45, 45, 0.5));
   border-radius: 10px;
@@ -252,7 +251,6 @@ header .subtitle p {
   }
   .modal-content {
     width: 40%;
-    height: 17%;
   }
 }
 /* iPad size */
@@ -296,7 +294,6 @@ header .subtitle p {
   }
   .modal-content {
     width: 50%;
-    height: 16%;
   }
   .modal-content .modal-text h3 {
     font-size: 30px;
@@ -362,7 +359,6 @@ header .subtitle p {
   }
   .modal-content {
     width: 70%;
-    height: 16%;
   }
   .modal-text h3 {
     font-size: 26px;
